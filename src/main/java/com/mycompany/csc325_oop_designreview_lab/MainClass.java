@@ -16,6 +16,7 @@ public class MainClass {
                 Scanner keyboard = new Scanner(System.in);
                 double inputGpa = 0;
              
+                //Cast age parameter as short data type
                 //Switched places of subclass and superclass declaration
 		Student std1 = new Freshman("James", (short)20, 12); // name, age, credits
                 

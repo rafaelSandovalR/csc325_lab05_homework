@@ -11,10 +11,7 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class MainClass {
 	
 	public static void main(String[] args) {
-	
-		// ToDo 9: Add a toString method for Freshman class
-		
-                // ToDo 10: Add a toString method for Senior class
+
              
 		Freshman std1= new Student("James", 20, 12); // name, age, credits
                 

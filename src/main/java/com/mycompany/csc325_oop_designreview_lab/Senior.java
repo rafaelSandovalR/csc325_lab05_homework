@@ -17,5 +17,11 @@ public class Senior extends Student{
                 "Senior students should have a minimum of 85 credits"
         );
     }
+
+    @Override
+    public String toString() {
+        return "Senior{" + '}';
+    }
+    
     
 }

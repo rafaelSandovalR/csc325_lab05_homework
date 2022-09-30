@@ -9,7 +9,22 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author MoaathAlrajab
  */
-public class Student {
+public class Student extends Human{
+
+    public Student(String name, short age, String address) {
+        super(name, age);
+        this.address = address;
+    }
+
+    @Override
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public void setAddress(String address) {
+        this.address = address;
+    }
 	// ToDo 1: Make this class a child of Human
 	
 	// ToDo 2: Fix the resulting errors

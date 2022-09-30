@@ -8,11 +8,13 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class Student extends Human{
     
     private double gpa;
+    private int credits;
 
     // Constructor calls superclass constructor first
-    public Student(String name, short age, String address) {
+    public Student(String name, short age, int credits) {
         super(name, age);
-        this.address = address;
+        address = "N/A";
+        this.credits = credits;
     }
 
     @Override

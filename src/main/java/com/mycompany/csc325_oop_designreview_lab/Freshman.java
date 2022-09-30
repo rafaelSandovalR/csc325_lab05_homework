@@ -16,7 +16,7 @@ public class Freshman extends Student{
  
     @Override
     public String toString() {
-        return "Freshman{" + '}';
+        return "Freshman{" + super.toString() + '}';
     }
     
     

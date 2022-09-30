@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author Rafael Sandoval Ramirez
  */
 public class MainClass {
 	
@@ -16,15 +16,17 @@ public class MainClass {
                 Scanner keyboard = new Scanner(System.in);
                 double inputGpa = 0;
              
+                //Switched places of subclass and superclass declaration
 		Student std1 = new Freshman("James", (short)20, 12); // name, age, credits
                 
                 Student std2 = new Senior("John", (short)30, 90);
                 
+                
+               //Array of students to easily ask for user input for each
                 Student[] students = {std1, std2};
-		
                 
                 for(Student s: students){
-                   System.out.println("Enter gpa for " + s.getName() + ":");
+                   System.out.print("Enter gpa for " + s.getName() + ":");
                    inputGpa = keyboard.nextDouble();
                    s.setGpa(inputGpa);
                 }
@@ -33,9 +35,7 @@ public class MainClass {
                 
                 System.out.println(std2);
 		
-		// ToDo 12: add comments and explain your code
-		
-		// ToDo 13: submit using a pull request.
+
 	}
 
 }    

@@ -20,7 +20,7 @@ public class Senior extends Student{
 
     @Override
     public String toString() {
-        return "Senior{" + '}';
+        return "Senior{" + super.toString() + '}';
     }
     
     

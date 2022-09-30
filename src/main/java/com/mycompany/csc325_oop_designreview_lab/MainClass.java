@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.csc325_oop_designreview_lab;
+import java.util.Scanner;
 
 /**
  *
@@ -12,14 +13,22 @@ public class MainClass {
 	
 	public static void main(String[] args) {
 
+                Scanner keyboard = new Scanner(System.in);
+                double inputGpa = 0;
              
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
+		Student std1 = new Freshman("James", (short)20, 12); // name, age, credits
                 
-                Senior std2 = new Student("John", 30, 90);
+                Student std2 = new Senior("John", (short)30, 90);
+                
+                Student[] students = {std1, std2};
 		
-		// ToDo 11: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
-		
+                
+                for(Student s: students){
+                   System.out.println("Enter gpa for " + s.getName() + ":");
+                   inputGpa = keyboard.nextDouble();
+                   s.setGpa(inputGpa);
+                }
+
 		System.out.println(std1);
                 
                 System.out.println(std2);
@@ -29,4 +38,4 @@ public class MainClass {
 		// ToDo 13: submit using a pull request.
 	}
 
-}
+}    
